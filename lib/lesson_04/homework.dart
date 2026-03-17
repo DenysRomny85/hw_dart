@@ -14,15 +14,17 @@ void main() {
 /// - name (String) — твоє ім'я
 /// - isStudent (bool) — чи ти студент
 void primitives() {
-  const age = 40;
-  const height = 173.5;
-  const name = 'Denys';
-  const isStudent = true;
+  // ignore_for_file: prefer_final_locals, omit_local_variable_types
+  int age = 40;
+  double height = 173.5;
+  String name = 'Denys';
+  bool isStudent = true;
 
   print('age $age');
   print('height $height');
   print('name $name');
   print('isStudent $isStudent');
+  print('-----------------------------------');
 }
 
 /// Завдання 2: Колекції
@@ -30,7 +32,27 @@ void primitives() {
 /// 2. Set — 3 унікальні оцінки, спробуй створити перевір print-ми,
 /// що вони не виводяться
 /// 3. Map — 3 предмети та їх оцінки
-void collections() {}
+void collections() {
+  List<String> colors = ['yellow', 'black', 'red'];
+  Set<int> nums = {10, 4, 6};
+  Map<String, int> ratingSubjects = {
+    'mathematics': 5,
+    'literature': 4,
+    'physicalСulture': 5,
+  };
+
+  for (final el in colors) {
+    print('color: $el');
+  }
+
+  for (final el in nums) {
+    print('set: $el');
+  }
+
+  for (final el in ratingSubjects.entries) {
+    print('map key: ${el.key} -value: ${el.value}');
+  }
+}
 
 /// Завдання 3: var, final, const
 /// 1. Створи змінну через var — наприклад, місто проживання та зміни
