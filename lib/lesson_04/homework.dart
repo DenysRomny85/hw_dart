@@ -59,7 +59,22 @@ void collections() {
 /// її декілька разів (print після кожної зміни)
 /// 2. Створи змінну через final — наприклад, країна
 /// 3. Створи змінну через const — наприклад, кількість днів у тижні
-void varFinalConst() {}
+void varFinalConst() {
+  var city = 'Romny';
+  print('city: $city');
+
+  city = 'Lviv';
+  print('city: $city');
+
+  city = 'Odessa';
+  print('city: $city');
+
+  final country = 'Ukraine';
+  print('country: ${country.toUpperCase()}');
+
+  const days = 7;
+  print('full week: $days days');
+}
 
 /// Завдання 4: Record
 /// Створи іменований та не іменований (позиційний) record з твоїм ім'ям
