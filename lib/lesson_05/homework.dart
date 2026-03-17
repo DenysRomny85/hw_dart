@@ -17,7 +17,20 @@ void main() {
 /// Обчисліть площу і периметр прямокутника.
 /// Виведіть площу і периметр.
 /// Використайте оператор ~/ для обчислення скільки повних квадратів 1х1 вміщається у площу.
-void task1() {}
+void task1() {
+  const width = 18.4;
+  const height = 30.9;
+
+  final area = width * height;
+  final perimeter = 2 * area;
+  final squares = area ~/ 1;
+
+  print('Ширина: $width');
+  print('Висота: $height');
+  print('Площа: $area');
+  print('Периметр: $perimeter');
+  print('Повних квадратів 1x1: $squares');
+}
 
 /// Завдання 2: Оператори порівняння
 /// Створіть змінну number.
