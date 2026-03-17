@@ -52,6 +52,8 @@ void collections() {
   for (final el in ratingSubjects.entries) {
     print('map key: ${el.key} -value: ${el.value}');
   }
+
+  print('-----------------------------------');
 }
 
 /// Завдання 3: var, final, const
@@ -74,6 +76,8 @@ void varFinalConst() {
 
   const days = 7;
   print('full week: $days days');
+
+  print('-----------------------------------');
 }
 
 /// Завдання 4: Record
@@ -85,9 +89,18 @@ void record() {
 
   print('user ${user.$1} age ${user.$1}');
   print('full user: name ${userFull.name} age ${userFull.age}');
+
+  print('-----------------------------------');
 }
 
 /// Завдання 5: Nullable (опціонально)
 /// Створи змінну String? nickname — може бути null або ім'я.
 /// Виведи її через ??: якщо null — виведи "Немає", інакше — значення.
-void nullable() {}
+void nullable() {
+  String? nickname;
+  print(nickname ?? 'Немає');
+  nickname = 'Jon';
+  print(nickname);
+
+  print('-----------------------------------');
+}
