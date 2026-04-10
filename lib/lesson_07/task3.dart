@@ -9,6 +9,6 @@ void main() {
   final nounsMapFiltered = Map.fromEntries(
     nounsMap.entries.where((el) => el.value % 2 == 0),
   );
-
-  print(nounsMapFiltered);
+  print('-----------------------------');
+  print(nounsMapFiltered.keys.toList());
 }

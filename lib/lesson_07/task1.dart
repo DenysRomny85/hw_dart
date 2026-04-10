@@ -4,7 +4,7 @@ void main() {
   final list = List.generate(100, (index) => Random().nextInt(101));
   print(list);
   print('65-й елемент: ${list[65]}');
-  list[50] = 1000000000;
+  list.insert(50, 1000000000);
   print('50-й елемент: ${list[50]}');
 
   final remoteList = {24, 45, 66, 88};
